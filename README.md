@@ -28,4 +28,4 @@ Let people know how they can dive into the project, include important links to t
 
 # License
 
-A short snippet describing the license (MIT, Apache, etc.)
+The codes remain an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in part or in whole without perimission expressely granted by Checkmate Conceovoir. To get a license please email support@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
