@@ -10,44 +10,16 @@ For more functions such as getting sponorship and giving discounts to members, c
 # Feed
 The feed contains information about current trends, mentions, messages and trending events. To post a feed use the text area provided (remember we have a 140 character limit). 
 
-# Analytics
-
-
 # Members List
-
-
-# Ticket buyers
-
+There are two ways of having a members list, the first one includes manually adding the members while the latter include importing a .csv file. To add a members list you must first be holding an event with Checkmate Vivus (go to create event section for more information on how to get started), go to analytics -> more then click the add members button to fill in the appropriate information. The same method can be applied for uploading a members list by using the upload .csv button.
 
 # Affiliate Programme
-
-
-# API Synopsis
-
-
-# Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-# Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
-
-# Installation
-
-Provide code examples and explanations of how to get the project.
-
-# API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-# Tests
-
-Describe and show how to run the tests with code examples.
+The affiliate programme can help you reward people sharing your links and increasing your ticket sales. To get started go to analytics -> more (for the event) and click on the 'add affiliate' button to fill in their username, paypal email and fee while checkmate handles the rest such as tracking their progress and calculting their earnings.
+    Hrllo
 
 # Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started an be one of our official developers.
 
 # License
 
