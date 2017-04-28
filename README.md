@@ -3,15 +3,27 @@
 Checkmate Vivus is an events plus social network designed to provide a seamless way of socialising via events. This documentation has been fully documented to our knowledge to help both organisers, attendees, companies and developers get the best experience from our platform. If you need further help in any section please email support@checkmateconcevoir.com and we would guide you through resolving any issues.
 
 # Creat Event
+To create an event click on the 'Create' button and fill in the form. Key information for a successful event include the name of the organiser, event name, event type, avaiable tickets, location, brief introduction, image, ticket price, date, time of the event and email. If none of the information are provided they are given a default value of 0 or empty. 
 
+For more functions such as getting sponorship and giving discounts to members, click on the advance settings button right at the bottom of the 'step 3' tab. This section contains information such as tickets avaiable for members, cost of the ticket, estimated people for your events, available ad space e.t.c save changes and continue the form process. 
 
 # Feed
-
+The feed contains information about current trends, mentions, messages and trending events. To post a feed use the text area provided (remember we have a 140 character limit). 
 
 # Analytics
 
 
-# More
+# Members List
+
+
+# Ticket buyers
+
+
+# Affiliate Programme
+
+
+# API Synopsis
+
 
 # Code Example
 
@@ -39,4 +51,4 @@ Let people know how they can dive into the project, include important links to t
 
 # License
 
-The codes remain an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in part or in whole without perimission expressely granted by Checkmate Conceovoir. To get a license please email support@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
+The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Conceovoir. To get a license please email support@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
