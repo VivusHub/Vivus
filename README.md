@@ -15,7 +15,9 @@ There are two ways of having a members list, the first one includes manually add
 
 # Affiliate Programme
 The affiliate programme can help you reward people sharing your links and increasing your ticket sales. To get started go to analytics -> more (for the event) and click on the 'add affiliate' button to fill in their username, paypal email and fee while checkmate handles the rest such as tracking their progress and calculting their earnings.
-    Hrllo
+```
+Hello
+```
 
 # Contributors
 
