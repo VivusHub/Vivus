@@ -12,16 +12,15 @@ This documentation assumes you already have an API access token or key, if you d
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $result = curl_exec($ch);
 
-The `$action`, `keyoptions`, `username` are they key parameters needed in making queries array:
+The `$action`, `$key`, `$username` are they key parameters needed in making queries array:
 
-* `action` - e.g eventlist, analytics etc states the information you would like to perform
-* `key` - This is your unique identifier
-* `username` - This states whose information you would like to access (in most cases it is the information tailored to your API)
-
+* `$action` - e.g eventlist, analytics etc states the information you would like to perform.
+* `$key` - This is your unique identifier.
+* `$username` - This states whose information you would like to access (in most cases it is the information tailored to your API).
 
 # Contributors
 
-To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started an be one of our official developers.
+To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started an be one of our official developers, due to the high volume of applicants we may take a few days to reply.
 
 # License
 
