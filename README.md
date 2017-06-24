@@ -16,12 +16,8 @@ This documentation assumes you already have an API access token or key, if you d
     // Set the parameters for arrays
     $id = array();
     $eventname = array();
-    $location = array();
-    $eventdate = array();
-    $image = array();
     $description = array();
-    $price = array();
-    $link = array();
+
 
     // Clear json file and print it in text format
     // source [https://stackoverflow.com/questions/4343596/parsing-json-file-with-php]
@@ -45,21 +41,7 @@ This documentation assumes you already have an API access token or key, if you d
         if($key == "details"){
             array_push($description, $val);
         }
-        if($key == "date"){
-            array_push($eventdate, $val);
-        }
-        if($key == "location"){
-            array_push($location, $val);
-        }
-        if($key == "img"){
-            array_push($image, $val);
-        }
-        if($key == "tprice"){
-            array_push($price, $val);
-        } 
-
     }
-    
         // Looping vars
         $x = $x + 1;
     }
@@ -73,6 +55,10 @@ This documentation assumes you already have an API access token or key, if you d
 
     // To output results e.g eventname
     echo("<h3>" . $eventname[$x] . "</h3>");
+    echo("<p>" . $description[$x] . "</p>");
+    
+    // Link to the event
+    echo("<p><a href='https://www.checkmateconcevoir.com/vivus/interface/eventpage?ei=" . $description[$x] . "'>Here</a></p>");
     }
     
 ```
