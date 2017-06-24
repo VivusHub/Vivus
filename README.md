@@ -5,12 +5,77 @@ Checkmate Vivus is an events plus social network designed to provide a seamless 
 # Getting started
 This documentation assumes you already have an API access token or key, if you don't have one login in to [Vivus](https://www.checkmateconcevoir.com/vivus/login?redirectUrl=interface/home?ei=0&promoter=social) under setting and access your access token. An example of making a query using php is shown below:
 
+```
     $action = "ActionType";
     $key = "AccessToken";
     $username = "Username";
     $ch = curl_init("https://www.checkmateconcevoir.com/vivus/interface/API/public/$action/$key/$username");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $result = curl_exec($ch);
+    
+    // Set the parameters for arrays
+    $id = array();
+    $eventname = array();
+    $location = array();
+    $eventdate = array();
+    $image = array();
+    $description = array();
+    $price = array();
+    $link = array();
+
+    // Clear json file and print it in text format
+    // source [https://stackoverflow.com/questions/4343596/parsing-json-file-with-php]
+    $jsonIterator = new RecursiveIteratorIterator(
+    new RecursiveArrayIterator(json_decode($result, TRUE)),
+    RecursiveIteratorIterator::SELF_FIRST);
+
+    // Used for looping as seen below
+    $x = 0;
+
+    // Loop through post provided by each outlet
+    foreach ($jsonIterator as $key => $val) {
+        if(is_array($val)) {} 
+        else {
+        if($key == "id"){
+            array_push($id, $val);
+        }
+        if($key == "eventname"){
+            array_push($eventname, $val);
+        }
+        if($key == "details"){
+            array_push($description, $val);
+        }
+        if($key == "date"){
+            array_push($eventdate, $val);
+        }
+        if($key == "location"){
+            array_push($location, $val);
+        }
+        if($key == "img"){
+            array_push($image, $val);
+        }
+        if($key == "tprice"){
+            array_push($price, $val);
+        } 
+
+    }
+    
+        // Looping vars
+        $x = $x + 1;
+    }
+
+
+    // array size of the news
+    $arraySize = sizeof($id);
+
+    // Then loop through them
+    for ($x = 0; $x < $arraySize; $x++) {
+
+    // To output results e.g eventname
+    echo("<h3>" . $eventname[$x] . "</h3>");
+    }
+    
+```
 
 The `$action`, `$key`, `$username` are they key parameters needed in making queries array:
 
