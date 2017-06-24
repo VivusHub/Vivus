@@ -72,7 +72,7 @@ The `$action`, `$key`, `$username` are the key parameters needed in making queri
 
 # Contributors
 
-To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started an be one of our official developers, due to the high volume of applicants we may take a few days to reply.
+To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started and be one of our official developers, due to the high volume of applicants we may take a few days to reply.
 
 # License
 
