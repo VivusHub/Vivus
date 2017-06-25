@@ -61,7 +61,7 @@ This documentation assumes you already have an API access token or key, if you d
     
     // Link to the event
     echo("<p><a href='https://www.checkmateconcevoir.com/vivus/interface/eventpage?ei="
-    . $description[$x] . "'>Here</a></p>");
+    . $id[$x] . "'>Here</a></p>");
     }
     
 ```
