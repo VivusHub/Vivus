@@ -1,7 +1,4 @@
 
-To get gallery information about your previous events, we apple the same principle only changing the action type as seen below
-
-```
    $actionType = "gallery";
    $key = "key"
    $username = "demo";
@@ -58,4 +55,3 @@ To get gallery information about your previous events, we apple the same princip
    src='" . $image[$x] . "' alt='checkmate-vivus-api-provided-images'><h3>" . $title[$x] . "</h3></a></li>");
 
    }
-```
