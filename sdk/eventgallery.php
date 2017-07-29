@@ -49,7 +49,7 @@
    $arraySize = sizeof($id);
 
    // Then loop through them
-   for ($x = 0; $x < $arraySize; $x++) {
+   for ($x = 0; $x <= $arraySize; $x++) {
 
    echo("<li><a href='#'><img class='img-responsive' width='300' height='200'
    src='" . $image[$x] . "' alt='checkmate-vivus-api-provided-images'><h3>" . $title[$x] . "</h3></a></li>");
