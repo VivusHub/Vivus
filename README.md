@@ -78,4 +78,4 @@ To be part of the checkmate team please send your cv to recruit@checkmateconcevo
 
 # License
 
-The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Conceovoir. To get a license please email support@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
+The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Conceovoir. To get a license please email dev@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
