@@ -27,7 +27,9 @@ This documentation assumes you already have an API access token or key, if you d
     new RecursiveArrayIterator(json_decode($result, TRUE)),
     RecursiveIteratorIterator::SELF_FIRST);
 
-    // Used for looping as seen below
+    // Used for looping an other actions as seen below
+    // You can remove this section but this was widely
+    // implemented by other developers
     $x = 0;
 
     // Loop through post provided by each outlet
@@ -74,8 +76,8 @@ The `$action`, `$key`, `$username` are the key parameters needed in making queri
 
 # Contributors
 
-To be part of the checkmate team please send your cv to recruit@checkmateconcevoir.com to get started and be one of our official developers, due to the high volume of applicants we may take a few days to reply.
+To be part of the Checkmate Vivus team please send your cv to recruit@checkmateconcevoir.com to get started and be one of our official developers, due to the high volume of applicants we may take a few days to reply.
 
 # License
 
-The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Conceovoir. To get a license please email dev@checkmateconcevoir.com or visit checkmateconcevoir.com to request a licence.
+The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Concevoir. 
