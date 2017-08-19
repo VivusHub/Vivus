@@ -68,14 +68,37 @@ This documentation assumes you already have an API access token or key, if you d
     
 ```
 
-The `$action`, `$key`, `$username` are the key parameters needed in making queries array:
+The `$action`, `$key` and `$username` are the key parameters needed to make a successful query:
 
 * `$action` - This variable states what information you may need, more examples:
   - eventlist: To get information of events hosted by you (the user).
   - eventvid: To get url link to videos upload to the Checkmate Vivus.
-  - gallery: To get galleries of event images uploaded to the Checkmate Vivus.
+  - gallery: To get galleries of images uploaded to the Checkmate Vivus.
 * `$key` - This is your unique identifier which can be found under settings, for public use you can use 'key' but access may be restricted.
-* `$username` - This states whose information you would like to access (in most cases it is the information tailored to your API).
+* `$username` - This states whose information you would like to access (in most cases it is the information tailored to your access to token).
+
+If successful the query returns a series of information in json:
+
+* ```
+[
+  {
+    "id": "95",
+    "username": "CheckmateVivus",
+    "eventname": "Lorem ipsum",
+    "img": "https://www.checkmateconcevoir.com/vivus/interface/../user/CheckmateVivus/img/1489407779marco-reus-is-the-cover-star-of-fifa-17.jpg",
+    "memberPrice": "0",
+    "price": "34",
+    "tprice": "1",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla tortor, mollis at tristique ut, iaculis ut justo. Pellentesque eu ultricies orci. Vestibulum quis lorem blandit, euismod lectus quis, maximus augue. Nulla mi purus, ultricies viverra sem nec, venenatis molestie lacus. Quisque id fermentum nulla, vel vehicula ex. In quis.",
+    "views": "0",
+    "location": "Basement Univeristy of Surrey",
+    "sold": "41",
+    "date": "2018-06-01",
+    "eventid": "1b5691b395abd7330b0a5cffac41abe6"
+  }
+]
+
+```
 
 # Contributors
 
