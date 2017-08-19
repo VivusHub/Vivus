@@ -77,9 +77,9 @@ The `$action`, `$key` and `$username` are the key parameters needed to make a su
 * `$key` - This is your unique identifier which can be found under settings, for public use you can use 'key' but access may be restricted.
 * `$username` - This states whose information you would like to access (in most cases it is the information tailored to your access to token).
 
-If successful the query returns a series of information in json:
+If successful the query returns a series of information in json format:
 
-* ```
+```
 [
   {
     "id": "95",
