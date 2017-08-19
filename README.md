@@ -70,7 +70,8 @@ This documentation assumes you already have an API access token or key, if you d
 
 The `$action`, `$key`, `$username` are the key parameters needed in making queries array:
 
-* `$action` - e.g eventlist, analytics etc states the information you would like to perform.
+* `$action` - This variable states what action you would like to perform and the information you may need.
+    *
 * `$key` - This is your unique identifier which can be found under settings, for public use you can use 'key' but access may be restricted.
 * `$username` - This states whose information you would like to access (in most cases it is the information tailored to your API).
 
