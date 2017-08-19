@@ -71,9 +71,9 @@ This documentation assumes you already have an API access token or key, if you d
 The `$action`, `$key`, `$username` are the key parameters needed in making queries array:
 
 * `$action` - This variable states what information you may need, more examples:
-  - eventlist
-  - eventvid
-  - gallery
+  - eventlist: To get information of events hosted by you (the user).
+  - eventvid: To get url link to videos upload to the Checkmate Vivus.
+  - gallery: To get galleries of event images uploaded to the Checkmate Vivus.
 * `$key` - This is your unique identifier which can be found under settings, for public use you can use 'key' but access may be restricted.
 * `$username` - This states whose information you would like to access (in most cases it is the information tailored to your API).
 
