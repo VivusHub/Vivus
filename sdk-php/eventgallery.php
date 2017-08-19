@@ -3,7 +3,7 @@
    $key = "key"
    $username = "demo";
    
-   $ch = curl_init("https://www.checkmateconcevoir.com/vivus/interface/API/public/ $actionType/$key/$username");
+   $ch = curl_init("https://www.checkmateconcevoir.com/vivus/interface/API/public/$actionType/$key/$username");
    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
    $result = curl_exec($ch);
 
