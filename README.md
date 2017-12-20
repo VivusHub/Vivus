@@ -110,7 +110,7 @@ We’ve documented a bulk of it in the link below but as they say if you know on
 - Companies: 
   - Get Insight
 - Attendees:
- - Post Updates
+  - Post Updates
 
 # Contributors
 
