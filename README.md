@@ -103,14 +103,14 @@ The Checkmate Vivus has several request endpoints from viewing your listed event
 
 We’ve documented a bulk of it in the link below but as they say if you know one you know them all but do check how we accept data entry and data request.
 - Organisers:
-  - Event Gallery Video
-  - Event Gallery 
-  - Event List
-  - Create Event
+  - [Event Video]
+  - [Event Gallery] 
+  - [Event List]
+  - [Create Event]
 - Companies: 
-  - Get Insight
+  - [Get Insight]
 - Attendees:
-  - Post Updates
+  - [Post Updates]
 
 # Contributors
 
