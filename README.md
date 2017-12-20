@@ -104,13 +104,13 @@ The Checkmate Vivus has several request endpoints from viewing your listed event
 We’ve documented a bulk of it in the link below but as they say if you know one you know them all but do check how we accept data entry and data request.
 - Organisers:
   - [Event Video](http://www.checkmateconcevoir.com)
-  - [Event Gallery] (http://www.checkmateconcevoir.com)
-  - [Event List] (http://www.checkmateconcevoir.com)
-  - [Create Event] (http://www.checkmateconcevoir.com)
+  - [Event Gallery](http://www.checkmateconcevoir.com)
+  - [Event List](http://www.checkmateconcevoir.com)
+  - [Create Event](http://www.checkmateconcevoir.com)
 - Companies: 
-  - [Get Insight] (http://www.checkmateconcevoir.com)
+  - [Get Insight](http://www.checkmateconcevoir.com)
 - Attendees:
-  - [Post Updates] (http://www.checkmateconcevoir.com)
+  - [Post Updates](http://www.checkmateconcevoir.com)
 
 # Contributors
 
