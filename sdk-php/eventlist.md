@@ -1,3 +1,4 @@
+```
 $action = "ActionType";
     $key = "AccessToken";
     $username = "Username";
@@ -55,3 +56,4 @@ $action = "ActionType";
     echo("<p><a href='https://www.checkmateconcevoir.com/vivus/interface/eventpage?ei="
     . $id[$x] . "'>Here</a></p>");
     }
+```
