@@ -1,4 +1,5 @@
 
+   ```
    $actionType = "gallery";
    $key = "key"
    $username = "demo";
@@ -55,3 +56,4 @@
    src='" . $image[$x] . "' alt='checkmate-vivus-api-provided-images'><h3>" . $title[$x] . "</h3></a></li>");
 
    }
+```
