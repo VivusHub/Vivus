@@ -1,4 +1,5 @@
 
+```
 $ch = curl_init("https://www.checkmateconcevoir.com/vivus/interface/API/public/eventvid/key/guildfordcasino");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($ch);
@@ -56,3 +57,4 @@ echo("<!-- 4:3 aspect ratio -->
 </div>");
 
 }
+```
