@@ -3,7 +3,7 @@
 This terminal allows users publish event via the post method regardless of if it has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. 
 
 - key: Access key `Required`  
-   Key to access Checkmate Vivus databasr, can no be empty and should be copied as is.
+   Key to access Checkmate Vivus database, can no be empty and should be copied as is.
    
 - og: Organiser Name `Required`  
     Name of the Organiser, value can not be empty and should be in a string format.
