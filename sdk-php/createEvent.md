@@ -90,7 +90,7 @@ The request above responds with an array containing the following
   "id": null
 }
 ```
-- Username: Username of the person who performed this action
-- Status: Status to show errors or if your request was successful
-- Link: If the action was successful a link is provided
+- Username: Username of the person who performed this action.
+- Status: Status to show errors or if your request was successful.
+- Link: If the action was successful a link is provided.
 - id: And an ID for support.
