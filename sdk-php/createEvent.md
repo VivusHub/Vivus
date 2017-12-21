@@ -2,6 +2,9 @@
 # Synopsis
 This terminal allows users publish event via the post method regardless of if it has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. 
 
+- key: Access key `Required`  
+   Key to access Checkmate Vivus databasr, can no be empty and should be copied as is.
+   
 - og: Organiser Name `Required`  
     Name of the Organiser, value can not be empty and should be in a string format.
 
@@ -16,6 +19,9 @@ This terminal allows users publish event via the post method regardless of if it
 
 - lc: Location `Required`  
     Location of the event is required, value can not be empty and should be in a string format.
+
+- ct: Country `Country`
+   Country where the event is being hosted, required and should be in a string format.
 
 - tg: Tags `Optional`  
     Tag for the event, value can be empty but if parsed it should be in a string format.
@@ -35,7 +41,7 @@ This terminal allows users publish event via the post method regardless of if it
 - tm: Time `Required`  
     Time of the event is required and should be parsed in time format e.g HH:MM:SS.
     
-# Usage
+# Making Request
  Example of it's usage can be found below.
  ```
  // set initial variables
@@ -53,16 +59,18 @@ This terminal allows users publish event via the post method regardless of if it
  
  
  // url request
- $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/createEvent/key/name';
- 
- // Post data
-$myvars = "og=" . $oraniserName . "&en=" . $ $eventName . "&et=" .  $eventType . 
-         "&ta=" .  $ticketAvailable . "&lc=" .  $location . "&tg=" . $tag . 
-          "&img=" . $img . "&pr=" .  $ticketPrice . "&cr=" . $currency . 
-          "&dt=" . $eventDate . "&tm=" . $eventTime;
+// url request
+$url = 'http://checkmateconcevoir.com/vivus/interface/API/public/organisers/createEvent.php';
+
+// Post data
+$myvars = "key=" . $key . "&og=" . $organiserName . "&en=" . $eventName . "&em=" . $organiserEmail . 
+          "&et=" .  $eventType . 
+        "&ta=" .  $ticketAvailable . "&lc=" .  $location . "&tg=" . $tag . "&ds=" . $description .
+         "&img=" . $imgUrl . "&pr=" .  $ticketPrice . "&cr=" . $currency . 
+         "&dt=" . $eventDate . "&tm=" . $eventTime . "&ct=" . $country;
 
 // make POST request
-$ch = curl_init( $url );
+$ch = curl_init($url);
 curl_setopt( $ch, CURLOPT_POST, 1);
 curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
 curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -71,3 +79,18 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec( $ch );
  ```
+
+# Response
+The request above responds with an array containing the following
+```
+{
+  "username": null,
+  "status": null,
+  "link": null,
+  "id": null
+}
+```
+- Username: Username of the person who performed this action
+- Status: Status to show errors or if your request was successful
+- Link: If the action was successful a link is provided
+- id: And an ID for support.
