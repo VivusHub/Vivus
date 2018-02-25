@@ -1,6 +1,6 @@
 
 # Synopsis
-This terminal allows users publish event via the post method regardless of if it has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. 
+This terminal allows users publish event via the post method regardless of if the event has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. No avoid spam and abuse of this channel we've made some changes to the mumber of calls you can make with a given concesion and perform crons to check if 2 events are exactly the same.
 
 - key: Access key `Required`  
    Key to access Checkmate Vivus database, can no be empty and should be copied as is.
@@ -20,7 +20,7 @@ This terminal allows users publish event via the post method regardless of if it
 - lc: Location `Required`  
     Location of the event is required, value can not be empty and should be in a string format.
 
-- ct: Country `Country`
+- ct: Country `Required`
    Country where the event is being hosted, required and should be in a string format.
 
 - tg: Tags `Optional`  
