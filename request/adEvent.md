@@ -18,7 +18,7 @@ xhttp.onreadystatechange = function(){
    if (xhttp.readyState == 4 && xhttp.status == 200) {
       /* Perform additional setup or respond request as required*/
   };
-  xhttp.open("GET", "https://www.checkmateconcevoir.com/vivus/interface/API/public2/k=" + a + "&t=" + requestType, true);
+  xhttp.open("GET", "https://www.checkmateconcevoir.com/vivus/interface/API/public2/ca?k=" + a + "&t=" + requestType, true);
   xhttp.send();
 }
 ```
