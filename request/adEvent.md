@@ -1,14 +1,14 @@
 # Synopsis 
-We heard, we listened and we are came up with a solution! We understand we 
+We heard, we listened and we came up with a solution! We understand we 
 may not be able to track each visit to your site and organisers may give ambiguous 
-result. To combat this this js file helps to track visits to your website.
+result. To combat this the adEvent js file helps to track visits to your website.
 
 # What does the js file do? Magic! 
 It tracks website visits and compares them to the location of the user
 and the time frame of the event or your ad campaign, yeah it's black mirror all over again!
 
 # Code
-Place the code below in your website and you are done
+Place the code below in your website and you are done.
 ```
 var key = 'YOUR_API_KEY';
 var requestType = 'adEvent';
@@ -25,5 +25,5 @@ xhttp.onreadystatechange = function(){
 # LICENSE
 Copyright of Checkmate Concevoir 2017 - Present. All rights reserved.
 This file falls under our 'Commercially available contents'
-terms of use and is subjected to Vivus terms and conditions
-https://www.checkmateconcevoir.com/vivus/interface/terms
+terms of use and is subjected to Vivus 
+[terms and conditions](https://www.checkmateconcevoir.com/vivus/interface/terms)
