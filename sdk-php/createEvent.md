@@ -1,24 +1,24 @@
 
 # Synopsis
-This terminal allows users publish event via the post method regardless of if the event has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. To avoid spam and abuse of this channel we've made some changes to the mumber of calls you can make within a given concession and occasionally perform crons to check if 2 events are exactly the same. If they are one or both of the event might be deleted, please check our [terms of use](https://www.checkmateconcevoir.com/vivus/interface/terms) for more information.
+This terminal allows users publish event via the post method regardless of if the event has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. To avoid spam and abuse of this channel we've made some changes to the number of calls you can make within a given concession and occasionally perform crons to check if 2 events are exactly the same. If they are, one or both of the event might be deleted. Please check our [terms of use](https://www.checkmateconcevoir.com/vivus/interface/terms) for more information.
 
 - key: Access key `Required`  
-   Key to access Checkmate Vivus database, can no be empty and should be copied as is.
+   Key to access Checkmate Vivus database, cannot be empty and should be copied as is.
    
 - og: Organiser Name `Required`  
-    Name of the Organiser, value can not be empty and should be in a string format.
+    Name of the Organiser, value cannot be empty and should be in a string format.
 
 - en: Event Name `Required`  
-    Name of the Event, value can not be empty and should be in a string format.
+    Name of the Event, value cannot be empty and should be in a string format.
 
 - et: Event Type `Optional`  
-    Event type, value can be empty but should be in a string format.
+    Event type, value can be empty but if available it should be in a string format.
 
 - ta: Tickets available `Optional`  
     Number of Tickets available, value can be empty. A default value of 300 is used. 
 
 - lc: Location `Required`  
-    Location of the event is required, value can not be empty and should be in a string format.
+    Location of the event is required, value cannot be empty and should be in a string format.
 
 - ct: Country `Required`
    Country where the event is being hosted, required and should be in a string format.
