@@ -1,4 +1,5 @@
 # AdEvent JS
+```
 // Prepare vars
 var key = 'YOUR_API_KEY'; // API key as seen on your settings page
 var requestType = 'adEvent'; // Query being made
