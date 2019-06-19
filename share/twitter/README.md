@@ -5,14 +5,14 @@ help you get started with services available.
 
 # Usage Overview
 The following topics are covered
-* [Getting Started]()
-* [Twitter Developer]()
-* [Send tweets]()
-* [Congrats]()
-* [Introducing Checkmate Vivus]()
-* [License]()
+* [Getting Started](#Getting-Started)
+* [Twitter Developer](#Twitter-App)
+* [Send tweets](#Send-Tweets)
+* [Introducing Checkmate Vivus](#Checkmate Vivus)
+* [Congrats](#Congrats)
+* [License](#License)
 
-# Getting started
+# Getting Started
 To get started you'll need a few things, composer and the twitter composer project on your server. To install this 
 launch your command line connect to your host.
 
@@ -35,11 +35,11 @@ composer require abraham/twitteroauth
 ```
 Now that you've set the foundation to send tweets from your server let's get setup the twitter API
 
-# Twitter app
-Create your twitter app on http://developer.twitter.com/en/apps, and get your save your keys and tokens. This tokens include
+# Twitter App
+Create your twitter app on [Twitter Developer](http://developer.twitter.com/en/apps), and get your save your keys and tokens. This tokens include
 your consumer api keys and access tokens which will be used for request.
 
-# Code To Send Tweets
+# Send Tweets
 To start sending tweets, create a your php file in yourproject folder and write the following codes right. 
 ```
 // Import the class
@@ -78,7 +78,7 @@ $content = $connection->get("account/verify_credentials");
     $status = $connection->post("statuses/update", $tweetData);
 ```
 
-# Hello Checkmate Vivus
+# Checkmate Vivus
 Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings) and request your API token. Once done, write the code in your file.
 
 ```
