@@ -82,6 +82,29 @@ Congratulations you've successfully implemented the twitter API to your code. If
 dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
 
 # Hello Checkmate Vivus
+Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send tweets or schedule tweets for later using our API. To do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings) and request your API token. You'll need this to make request, to send tweets 
+
+```
+$url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
+    $myvars = "post=YOUR_TWEET&";
+    $myvars .= "key=YOUR_KEY&";
+    $myvars .= "type=twitter";
+    
+    /* 
+    You can send image and schedule the post for later
+    Uncomment this section to apply this vars
+    $myvars .= "ptime=MM-DD-YYYY";
+    $myvars .= "img=www.URLTOIMAGE.png";
+    */
+    
+    $ch = curl_init($url);
+    curl_setopt( $ch, CURLOPT_POST, 1);
+    curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
+    curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt( $ch, CURLOPT_HEADER, 0);
+    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+    $response = curl_exec($ch);
+```
 
 # License
 The codes and all related text in this doucment are licensed unde the BCD license. Redistribution and use in source and
