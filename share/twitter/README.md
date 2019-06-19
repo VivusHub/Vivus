@@ -1,10 +1,8 @@
 # Synopsis
-Thanks for your interest in using some of the tools used by Checkmate Concevoir. This document aims to highlight how
-Checkmate Concevoir sends tweets during signups. This file has has been dcoumented to the best of our knowledge to 
-help you get started with services available.
+Thanks for your interest in using some of the tools used by Checkmate Concevoir in send and scheduling tweets on the Checkmate Vivus platform. This file has has been dcoumented to the best of our knowledge to help you get started with services supporting the twitter API.
 
 # Usage Overview
-The following topics are covered
+The following topics are covered:
 * [Getting Started](#Getting-Started)
 * [Twitter Developer](#Twitter-App)
 * [Send tweets](#Send-Tweets)
@@ -13,8 +11,7 @@ The following topics are covered
 * [License](#License)
 
 # Getting Started
-To get started you'll need a few things, composer and the twitter composer project on your server. To install this 
-launch your command line connect to your host.
+To get started you'll need a few things, composer and the twitter PHP oauth. To install this, launch the command line on your Mac to connect to your server via ssh.
 
 ```
 # Connect to your server using ssh
@@ -29,18 +26,17 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-Once completed, download the PHP TwitterOAuth REST API. To do this, using composer run the following code in your command line
+Once completed, download the PHP TwitterOAuth REST API. To do this, using composer run the following line of code in your command line
 ```
 composer require abraham/twitteroauth
 ```
-Now that you've set the foundation to send tweets from your server let's get setup the twitter API
+Now that you've set the foundation on your server, let's get you started in creating your twitter app.
 
 # Twitter App
-Create your twitter app on [Twitter Developer](http://developer.twitter.com/en/apps), and get your save your keys and tokens. This tokens include
-your consumer api keys and access tokens which will be used for request.
+To create your twitter app visit [Twitter Developer](http://developer.twitter.com/en/apps), fill in the requirements and save the keys and tokens provided. This tokens should include your consumer api keys and access tokens which will be used to send and request data via twitter API.
 
 # Send Tweets
-To start sending tweets, create a your php file in yourproject folder and write the following codes right. 
+To start sending tweets, create a php file in your project folder and write the following codes right at the top. 
 ```
 // Import the class
 require "vendor/autoload.php";
@@ -77,9 +73,10 @@ $tweetData = array(
 $content = $connection->get("account/verify_credentials");
     $status = $connection->post("statuses/update", $tweetData);
 ```
+That's all you need to get started in sending tweets. If you don't want be concerned about the nucks and crannies of the twitter api, you can make use of the Checkmate Vivus share API which requires less lines of code, 11 to be exact!
 
 # Checkmate Vivus
-Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code to your file.
+Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code in your file.
 
 ```
 $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
@@ -102,16 +99,18 @@ $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
     $response = curl_exec($ch);
 ```
-That's all! Simple right!
+That's all! Simple right?
 
 # Congrats
 Congratulations you've successfully implemented the twitter API to your code. If you are running into problems feel free to email
 dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
 
 # License
-The codes and all related text in this doucment are licensed unde the BCD license. Redistribution and use in source and
-binary forms are permitted provided the copyright notive and this paragraphic is duplicated in all such forms, documentations,
-advertising materials and the use acknowledges that the it was developed by Checkmate Concevoir ltd. Checkmate Concevoir may
-not be used to endorse or products derived from this code without specific prior witter perfimssion from the authors of Checkmate
-Concevoir ltd. This code is provided as is and without any express or implied warranties, including without limitation, the implied
-warranties of merchantability and fitness for a particular purpose disclaimed. 
+The codes and all related text in this doucment are licensed unde the BCD license.
+Copyright 2019 Checkmate Concevoir ltd.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+   * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
