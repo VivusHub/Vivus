@@ -77,12 +77,9 @@ $tweetData = array(
 $content = $connection->get("account/verify_credentials");
     $status = $connection->post("statuses/update", $tweetData);
 ```
-# Congrats
-Congratulations you've successfully implemented the twitter API to your code. If you are running into problems feel free to email
-dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
 
 # Hello Checkmate Vivus
-Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send tweets or schedule tweets for later using our API. To do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings) and request your API token. You'll need this to make request, to send tweets 
+Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings) and request your API token. Once done, write the code in your file.
 
 ```
 $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
@@ -105,6 +102,11 @@ $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
     curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
     $response = curl_exec($ch);
 ```
+That's all! Simple right!
+
+# Congrats
+Congratulations you've successfully implemented the twitter API to your code. If you are running into problems feel free to email
+dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
 
 # License
 The codes and all related text in this doucment are licensed unde the BCD license. Redistribution and use in source and
