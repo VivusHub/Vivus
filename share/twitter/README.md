@@ -79,7 +79,7 @@ $content = $connection->get("account/verify_credentials");
 ```
 
 # Checkmate Vivus
-Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings) and request your API token. Once done, write the code in your file.
+Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code to your file.
 
 ```
 $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
