@@ -8,7 +8,7 @@ The following topics are covered
 * [Getting Started](#Getting-Started)
 * [Twitter Developer](#Twitter-App)
 * [Send tweets](#Send-Tweets)
-* [Introducing Checkmate Vivus](#Checkmate Vivus)
+* [Introducing Checkmate Vivus](#Checkmate-Vivus)
 * [Congrats](#Congrats)
 * [License](#License)
 
