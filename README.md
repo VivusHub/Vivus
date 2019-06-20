@@ -1,6 +1,6 @@
 # Synopsis
 
-Checkmate Vivus is an events plus social network designed to provide a seamless way of socialising via events. This documentation has been fully documented to our knowledge to help both organisers, attendees, companies and developers get the best experience from our platform. If you need further help in any section please email dev@checkmateconcevoir.com and we would guide you through resolving any issues.
+Checkmate Vivus, family of apps to help you create and share moments. This documentation has been fully documented to our knowledge to help both organisers, attendees, companies and developers get the best experience from our platform. If you need further help in any section please email dev@checkmateconcevoir.com and we would guide you through resolving any issues.
 
 # Getting started
 This documentation assumes you already have an API access token or key, if you don't have one login to [Vivus](https://www.checkmateconcevoir.com/vivus/login?redirectUrl=interface/home?ei=0&promoter=social) under setting and access your access token. An example of making a query using php is shown below:
