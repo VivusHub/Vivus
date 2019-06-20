@@ -1,5 +1,5 @@
 # Synopsis
-Thanks for your interest in using some of the tools used by Checkmate Concevoir in send and scheduling tweets on the Checkmate Vivus platform. This file has has been dcoumented to the best of our knowledge to help you get started with services supporting the twitter API.
+Thanks for your interest in using some of the tools used by Checkmate Concevoir in sending and scheduling tweets on the Checkmate Vivus platform. This file has has been dcoumented to the best of our knowledge to help you get started with the twitter API.
 
 # Usage Overview
 The following topics are covered:
@@ -11,7 +11,7 @@ The following topics are covered:
 * [License](#License)
 
 # Getting Started
-To get started you'll need a few things, composer and the twitter PHP oauth. To install this, launch the command line on your Mac to connect to your server via ssh.
+To get started you'll need a few things, composer and the twitter PHP oauth. To install this, launch the command line on your Mac or Windows and connect to your server via ssh.
 
 ```
 # Connect to your server using ssh
@@ -26,14 +26,14 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-Once completed, download the PHP TwitterOAuth REST API. To do this, using composer run the following line of code in your command line
+Once completed, download the PHP TwitterOAuth REST API using composer, to do this run the following line of code in your command line:
 ```
 composer require abraham/twitteroauth
 ```
-Now that you've set the foundation on your server, let's get you started in creating your twitter app.
+Now that you've set the foundation on your server, let's get you started in creating your first twitter app.
 
 # Twitter App
-To create your twitter app visit [Twitter Developer](http://developer.twitter.com/en/apps), fill in the requirements and save the keys and tokens provided. This tokens should include your consumer api keys and access tokens which will be used to send and request data via twitter API.
+To create your twitter app visit [Twitter Developer](http://developer.twitter.com/en/apps), fill in the required information and save the keys and tokens provided. This tokens should include your consumer api keys and access tokens which will be used to send and request data via twitter API.
 
 # Send Tweets
 To start sending tweets, create a php file in your project folder and write the following codes right at the top. 
@@ -76,7 +76,7 @@ $content = $connection->get("account/verify_credentials");
 That's all you need to get started in sending tweets. If you don't want be concerned about the nucks and crannies of the twitter api, you can make use of the Checkmate Vivus share API which requires less lines of code, 11 to be exact!
 
 # Checkmate Vivus
-Here at Checkmate Concevoir we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code in your file.
+Here at Checkmate Vivus we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code in your file.
 
 ```
 $url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
