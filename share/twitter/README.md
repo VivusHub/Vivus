@@ -106,7 +106,7 @@ Congratulations you've successfully implemented the twitter API to your code. If
 dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
 
 # License
-The codes and all related text in this doucment are licensed unde the BCD license.
+The codes and all related text in this doucment are licensed under the BCD license.
 Copyright 2019 Checkmate Concevoir ltd.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
