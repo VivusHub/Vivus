@@ -1,9 +1,9 @@
 # Synopsis
 
-Checkmate Vivus, family of apps to help you create and share moments. This documentation has been fully documented to our knowledge to help both organisers, attendees, companies and developers get the best experience from our platform. If you need further help in any section please email dev@checkmateconcevoir.com and we would guide you through resolving any issues.
+Checkmate Vivus family of apps is designed to helps users create and share moments. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@checkmateconcevoir.com and we would guide you through resolving any issues.
 
 # Getting started
-This documentation assumes you already have an API access token or key, if you don't have one login to [Vivus](https://www.checkmateconcevoir.com/vivus/login?redirectUrl=interface/home?ei=0&promoter=social) under setting and access your access token. An example of making a query using php is shown below:
+This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.checkmateconcevoir.com/vivus/login?redirectUrl=interface/home?ei=0&promoter=social). You'll find your token under settings.
 
 ```
     $action = "ActionType";
@@ -91,7 +91,7 @@ If successful the query returns a series of information in json format:
     "tprice": "1",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla tortor, mollis at tristique ut, iaculis ut justo. Pellentesque eu ultricies orci. Vestibulum quis lorem blandit, euismod lectus quis, maximus augue. Nulla mi purus, ultricies viverra sem nec, venenatis molestie lacus. Quisque id fermentum nulla, vel vehicula ex. In quis.",
     "views": "0",
-    "location": "Basement Univeristy of Surrey",
+    "location": "Manchester, United Kingdom",
     "sold": "41",
     "date": "2018-06-01",
     "eventid": "1b5691b395abd7330b0a5cffac41abe6"
@@ -107,14 +107,12 @@ We’ve documented a bulk of it in the link below but as they say if you know on
   - [Event Gallery](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventgallery.md)
   - [Event List](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventlist.md)
   - [Create Event](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/createEvent.md)
-- Companies: 
-  - [Get Insight](http://www.checkmateconcevoir.com)
-- Attendees:
-  - [Post Updates](http://www.checkmateconcevoir.com)
 
 # Contributors
 
 To be part of the Checkmate Vivus team please send your cv to recruit@checkmateconcevoir.com to get started and be one of our official developers, due to the high volume of applicants we may take a few days to reply.
+* Seun Oboite
+* Christopher Salay
 
 # License
 
