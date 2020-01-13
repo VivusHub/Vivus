@@ -1,6 +1,4 @@
 # Synopsis
-PHP version of Checkmate Vivus API, it supports
-* [Event Listing](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventlist.md)
-* [Gallery Listing](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventgallery.md)
-* [Video Listing](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventGalleryVid.md)
-* [Create Event](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/createEvent.md)
+PHP version of Vivus Hub API, it supports
+* [Event Listing](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/eventlist.md)
+* [Create Event](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/createEvent.md)

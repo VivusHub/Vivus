@@ -1,17 +1,17 @@
 # Synopsis
 
-Checkmate Vivus family of apps is designed to helps users create and share moments. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@checkmateconcevoir.com and we would guide you through resolving any issues.
+Vivus Hub family of apps is designed to helps users create and share life experiences. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@checkmateconcevoir.com and we would guide you through resolving any issues.
 
 # Getting started
-This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.checkmateconcevoir.com/vivus/login?redirectUrl=interface/home?ei=0&promoter=social). You'll find your token under settings.
+This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.vivushub.com/vivus/interface/settings). You'll find your token under settings.
 
 ```
     $action = "ActionType";
     $key = "AccessToken";
     $username = "Username";
     
-    // example url -> https://www.checkmateconcevoir.com/vivus/interface/API/public/eventlist/key/demo
-    $ch = curl_init("https://www.checkmateconcevoir.com/vivus/interface/API/public/$action/$key/$username");
+    // example url -> https://www.vivushub.com/vivus/interface/API/public/eventlist/key/demo
+    $ch = curl_init("https://www.vivushub.com/vivus/interface/API/public/$action/$key/$username");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $result = curl_exec($ch);
     
@@ -62,7 +62,7 @@ This documentation assumes you already have an API access token or key, if you d
     echo("<p>" . $description[$x] . "</p>");
     
     // Link to the event
-    echo("<p><a href='https://www.checkmateconcevoir.com/vivus/interface/eventpage?ei="
+    echo("<p><a href='https://www.vivushub.com/vivus/interface/eventpage?ei="
     . $id[$x] . "'>Here</a></p>");
     }
     
@@ -83,9 +83,9 @@ If successful the query returns a series of information in json format:
 [
   {
     "id": "95",
-    "username": "CheckmateVivus",
+    "username": "Vivus Hub",
     "eventname": "Lorem ipsum",
-    "img": "https://www.checkmateconcevoir.com/vivus/interface/../user/CheckmateVivus/img/1489407779marco-reus-is-the-cover-star-of-fifa-17.jpg",
+    "img": "https://www.vivushub.com/vivus/urlToImage.png",
     "memberPrice": "0",
     "price": "34",
     "tprice": "1",
@@ -99,21 +99,17 @@ If successful the query returns a series of information in json format:
 ]
 
 ```
-The Checkmate Vivus has several request endpoints from viewing your listed events, gallery or just creating events. 
+The Vivus Hub has several request endpoints from viewing your listed events or just creating events. 
 
 We’ve documented a bulk of it in the link below but as they say if you know one you know them all but do check how we accept data entry and data request.
 - Organisers:
-  - [Event Video](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventGalleryVid.md)
-  - [Event Gallery](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventgallery.md)
-  - [Event List](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/eventlist.md)
-  - [Create Event](https://github.com/checkmateconcevoir/Checkmate-Vivus/blob/master/sdk-php/createEvent.md)
+  - [Event List](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/eventlist.md)
+  - [Create Event](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/createEvent.md)
 
-# Contributors
+# Credits
 
-To be part of the Checkmate Vivus team please send your cv to recruit@checkmateconcevoir.com to get started and be one of our official developers, due to the high volume of applicants we may take a few days to reply.
-* Seun Oboite
-* Christopher Salay
+Vivus Hub API is owned and maintained by Vivus Hub ltd. You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
 
 # License
 
-The codes and all related text in this documentation remains an intellectual property of Checkmate Concevoir and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Checkmate Concevoir. 
+The codes and all related text in this documentation remains an intellectual property of Vivus Hub and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Vivus Hub. 
