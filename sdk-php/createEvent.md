@@ -1,9 +1,9 @@
 
 # Synopsis
-This terminal allows users publish event via the post method regardless of if the event has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. To avoid spam and abuse of this channel we've made some changes to the number of calls you can make within a given concession and occasionally perform crons to check if 2 events are exactly the same. If they are, one or both of the event might be deleted. Please check our [terms of use](https://www.checkmateconcevoir.com/vivus/interface/terms) for more information.
+This terminal allows users publish event via the post method regardless of if the event has been posted before. A few values are required such as name of the event, date, time and the likes while a default value is set for some parameters if empty. To avoid spam and abuse of this channel we've made some changes to the number of calls you can make within a given concession and occasionally perform crons to check if 2 events are exactly the same. If they are, one or both of the event might be deleted. Please check our [terms of use](https://www.vivushub.com/vivus/interface/terms) for more information.
 
 - key: Access key `Required`  
-   Key to access Checkmate Vivus database, cannot be empty and should be copied as is.
+   Key to access Vivus Hub database, cannot be empty and should be copied as is.
    
 - og: Organiser Name `Required`  
     Name of the Organiser, value cannot be empty and should be in a string format.
@@ -49,7 +49,7 @@ This terminal allows users publish event via the post method regardless of if th
  $eventName = "Example Event";
  $eventType = "entertainment";
  $ticketAvailable = 200;
- $location = "Manchester, Checkmate Vivus ville";
+ $location = "Manchester, Vivus villa";
  $tag = "Thw best event yet";
  $img = "http://exampleimg.com/example.jpg";
  $ticketPrice = "5";
@@ -58,9 +58,8 @@ This terminal allows users publish event via the post method regardless of if th
  $eventTime = "22:-00";
  
  
- // url request
 // url request
-$url = 'http://checkmateconcevoir.com/vivus/interface/API/public/organisers/createEvent.php';
+$url = 'http://vivushub.com/vivus/interface/API/public/organisers/createEvent.php';
 
 // Post data
 $myvars = "key=" . $key . "&og=" . $organiserName . "&en=" . $eventName . "&em=" . $organiserEmail . 

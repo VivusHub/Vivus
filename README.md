@@ -1,6 +1,6 @@
 # Synopsis
 
-Vivus Hub family of apps is designed to helps users create and share life experiences. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@checkmateconcevoir.com and we would guide you through resolving any issues.
+Vivus Hub family of apps is designed to helps users create and share life experiences. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@vivushub.com and we would guide you through resolving any issues.
 
 # Getting started
 This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.vivushub.com/vivus/interface/settings). You'll find your token under settings.
@@ -108,8 +108,8 @@ We’ve documented a bulk of it in the link below but as they say if you know on
 
 # Credits
 
-Vivus Hub API is owned and maintained by Vivus Hub ltd. You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
+Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
 
 # License
 
-The codes and all related text in this documentation remains an intellectual property of Vivus Hub and is not meant to be copied, modified and sold in whole or in part without perimission expressely granted by Vivus Hub. 
+The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms)
