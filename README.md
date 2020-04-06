@@ -1,9 +1,9 @@
 # Synopsis
 
-Vivus Hub family of apps is designed to helps users create and share life experiences. This repo has been fully documented to the best of our knowledge to help both brands and developers get the best experience from our platform. If you need further help in any section please email support@vivushub.com and we would guide you through resolving any issues.
+Vivus Hub family of apps is designed to helps users create and share live experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help in any section please feel free to email us at support@vivushub.com.
 
 # Getting started
-This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.vivushub.com/vivus/interface/settings). You'll find your token under settings.
+This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.vivushub.com/vivus/interface/settings?ref=github). You'll find your token under settings.
 
 ```
     $action = "ActionType";
