@@ -1,110 +1,76 @@
 # Synopsis
-
 Vivus Hub family of apps is designed to helps users create and share live experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help in any section please feel free to email us at support@vivushub.com.
 
-# Getting started
+- [Features](#features)
+- [Usage Guide](#usage-guide)
+ + [Get Key](#get-key)
+ + [Create Event](#create-event)
+ + [Event List](#event-list)
+ + [Get Insight](#get-insight)
+ + [Handle Ticket](#handle-ticket)
+ + [Handle Promoter](#handle-promoter)
+- [Credit](#credit)
+- [License](#license)
+
+## Usage Guide
+### Get Key
 This documentation assumes you already have an API access token or key, if you don't have one please login to [Vivus](https://www.vivushub.com/vivus/interface/settings?ref=github). You'll find your token under settings.
 
-```
-    $action = "ActionType";
-    $key = "AccessToken";
-    $username = "Username";
-    
-    // example url -> https://www.vivushub.com/vivus/interface/API/public/eventlist/key/demo
-    $ch = curl_init("https://www.vivushub.com/vivus/interface/API/public/$action/$key/$username");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $result = curl_exec($ch);
-    
-    // Set the parameters for arrays
-    $id = array();
-    $eventname = array();
-    $description = array();
+
+### Create Event
+The graph API is HTTP-based, so it works with any languages that has an HTTP library such as cURL and more. An additional benefit is that you can use the Graph API library directly in your browser. 
+
+To create an event you need the following parameters:
+* `eventname` - The name of your event.
+* `organiser` - The name of the organiser.
+* `img` - Url to the event image.
+* `tag` - Short promotion tag for your event.
+* `desc` - Description of the event.
+* `startdate` - Start time of the event, usually in dd-mm-yy H:i:s format.
+* `enddate` - End time of the event, usually in dd-mm-yy H:i:s format.
+* `location` - Location of the event short but descriptive e.g 1600 Pennsylvania Avenue NW Washington, D.C.
+* `country` - The country where the eent is hosted.
+* `rType` -  Request time, this variable only accepts `delete`, `update`, `create`.
+* `key` - Your public API key.
+
+When updating events, you are free to ignore variables you would like to miss out. Once request are made, json data is return back e.g 
 
 
-    // Clear json file and print it in text format
-    // source [https://stackoverflow.com/questions/4343596/parsing-json-file-with-php]
-    $jsonIterator = new RecursiveIteratorIterator(
-    new RecursiveArrayIterator(json_decode($result, TRUE)),
-    RecursiveIteratorIterator::SELF_FIRST);
+```php 
+// Url Request
+curl -i -X GET \
+"https://www.vivushub.com/vivus/interface/API/public/event"
 
-    // Used for looping an other actions as seen below
-    // You can remove this section but this was widely
-    // implemented by other developers
-    $x = 0;
-
-    // Loop through post provided by each outlet
-    foreach ($jsonIterator as $key => $val) {
-        if(is_array($val)) {} 
-        else {
-        if($key == "id"){
-            array_push($id, $val);
-        }
-        if($key == "eventname"){
-            array_push($eventname, $val);
-        }
-        if($key == "details"){
-            array_push($description, $val);
-        }
-    }
-        // Looping vars
-        $x = $x + 1;
-    }
-
-
-    // array size of the news
-    $arraySize = sizeof($id);
-
-    // Then loop through them
-    for ($x = 0; $x < $arraySize; $x++) {
-
-    // To output results e.g eventname
-    echo("<h3>" . $eventname[$x] . "</h3>");
-    echo("<p>" . $description[$x] . "</p>");
-    
-    // Link to the event
-    echo("<p><a href='https://www.vivushub.com/vivus/interface/eventpage?ei="
-    . $id[$x] . "'>Here</a></p>");
-    }
-    
+// Response 
+{
+    'status': 'Success', // Other response include fail
+    'id': 'event-id'
+}
 ```
 
-The `$action`, `$key` and `$username` are the key parameters needed to make a successful query:
-
-* `$action` - This variable states what information you may need, more examples:
-  - eventlist: To get information of events hosted by you (the user).
-  - eventvid: To get url link to videos upload to the Checkmate Vivus.
-  - gallery: To get galleries of images uploaded to the Checkmate Vivus.
-* `$key` - This is your unique identifier which can be found under settings, for public use you can use 'key' but access may be restricted.
-* `$username` - This states whose information you would like to access (in most cases it is the information tailored to your access to token).
-
-If successful the query returns a series of information in json format:
-
+### Event List
+```php 
+curl -i -X GET \
+"https://www.vivushub.com/vivus/interface/API/public/list"
 ```
-[
-  {
-    "id": "95",
-    "username": "Vivus Hub",
-    "eventname": "Lorem ipsum",
-    "img": "https://www.vivushub.com/vivus/urlToImage.png",
-    "memberPrice": "0",
-    "price": "34",
-    "tprice": "1",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla tortor, mollis at tristique ut, iaculis ut justo. Pellentesque eu ultricies orci. Vestibulum quis lorem blandit, euismod lectus quis, maximus augue. Nulla mi purus, ultricies viverra sem nec, venenatis molestie lacus. Quisque id fermentum nulla, vel vehicula ex. In quis.",
-    "views": "0",
-    "location": "Manchester, United Kingdom",
-    "sold": "41",
-    "date": "2018-06-01",
-    "eventid": "1b5691b395abd7330b0a5cffac41abe6"
-  }
-]
 
+### Get Insight
+```php 
+curl -i -X GET \
+"https://www.vivushub.com/vivus/interface/API/public/insight"
 ```
-The Vivus Hub has several request endpoints from viewing your listed events or just creating events. 
 
-We’ve documented a bulk of it in the link below but as they say if you know one you know them all but do check how we accept data entry and data request.
-- Organisers:
-  - [Event List](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/eventlist.md)
-  - [Create Event](https://github.com/VivusHub/Vivus-Create/blob/master/sdk-php/createEvent.md)
+### Handle Ticket
+```php 
+curl -i -X POST \
+"https://www.vivushub.com/vivus/interface/API/public/ticket"
+```
+
+### Handle Promoter
+```php 
+curl -i -X POST \
+"https://www.vivushub.com/vivus/interface/API/public/partners"
+```
 
 # Credits
 
@@ -112,4 +78,4 @@ Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.co
 
 # License
 
-The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms)
+The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GPI when applicable. In the event of a conflict between our terms and the GPU license, Vivus Hub terms takes precedent.
