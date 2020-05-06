@@ -37,7 +37,7 @@ When updating events, you are free to ignore variables you would like to miss ou
 
 
 ```php 
-// Url Request
+// Endpoint Request
 curl -i -X GET \
 "https://www.vivushub.com/vivus/interface/API/public/event"
 
@@ -49,27 +49,39 @@ curl -i -X GET \
 ```
 
 ### Event List
-```php 
+```php
+// Endpoint Request
 curl -i -X GET \
 "https://www.vivushub.com/vivus/interface/API/public/list"
+
+// Response 
 ```
 
 ### Get Insight
 ```php 
+// Endpoint Request
 curl -i -X GET \
 "https://www.vivushub.com/vivus/interface/API/public/insight"
+
+// Response 
 ```
 
 ### Handle Ticket
 ```php 
+// Endpoint Request
 curl -i -X POST \
 "https://www.vivushub.com/vivus/interface/API/public/ticket"
+
+// Response 
 ```
 
 ### Handle Promoter
 ```php 
+// Endpoint Request
 curl -i -X POST \
 "https://www.vivushub.com/vivus/interface/API/public/partners"
+
+// Response 
 ```
 
 # Credits
@@ -78,4 +90,4 @@ Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.co
 
 # License
 
-The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GPI when applicable. In the event of a conflict between our terms and the GPU license, Vivus Hub terms takes precedent.
+The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GNU when applicable. In the event of a conflict between our terms and the GNU license, Vivus Hub terms takes precedent.
