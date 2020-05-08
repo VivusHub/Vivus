@@ -1,12 +1,12 @@
 # Synopsis
-Thanks for your interest in using some of the tools used by Checkmate Concevoir in sending and scheduling tweets on the Checkmate Vivus platform. This file has has been dcoumented to the best of our knowledge to help you get started with the twitter API.
+Thanks for your interest in using some of the tools used by Vivus Hub in sending and scheduling tweets on the Vivus Create platform. This file has has been dcoumented to the best of our knowledge to help you get started with the twitter API.
 
 # Usage Overview
 The following topics are covered:
 * [Getting Started](#Getting-Started)
 * [Twitter Developer](#Twitter-App)
 * [Send tweets](#Send-Tweets)
-* [Introducing Checkmate Vivus](#Checkmate-Vivus)
+* [Introducing Vivus Hub](#Vivus-Hub)
 * [Congrats](#Congrats)
 * [License](#License)
 
@@ -55,8 +55,8 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCE
 Prepare tweet variable
 // If you are just posting a tweet 
     $tweetData = array(
-    "status"=> "This is what I would like to tweet, Checkmate!",
-    "in_reply_to_status_id"=> "@Checkmate_Co",
+    "status"=> "This is what I would like to tweet, Vivus Hub!",
+    "in_reply_to_status_id"=> "@VivusHub",
     );
         
 // If you are using a media you'll have to upload it first then 
@@ -65,7 +65,7 @@ $media1 = $connection->upload('media/upload', ['media' => "https://urlToImage.pn
         
 $tweetData = array(
 "status"=> "This is what I would like to tweet, Checkmate!",
-"in_reply_to_status_id"=> "@Checkmate_Co",
+"in_reply_to_status_id"=> "@VivusHub",
 'media_ids' => implode(',', [$media1->media_id_string])
 );
 
@@ -75,39 +75,16 @@ $content = $connection->get("account/verify_credentials");
 ```
 That's all you need to get started in sending tweets. If you don't want be concerned about the nucks and crannies of the twitter api, you can make use of the Checkmate Vivus share API which requires less lines of code, 11 to be exact!
 
-# Checkmate Vivus
-Here at Checkmate Vivus we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Checkmate Vivus](https://www.checkmateconcevoir.com/vivus/interface/settings), request your API token and write the following lines of code in your file.
-
-```
-$url = 'https://www.checkmateconcevoir.com/vivus/interface/API/public/share';
-    $myvars = "post=YOUR_TWEET&";
-    $myvars .= "key=YOUR_KEY&";
-    $myvars .= "type=twitter";
-    
-    /* 
-    You can send image and schedule the post for later
-    Uncomment this section to apply this vars
-    $myvars .= "ptime=MM-DD-YYYY";
-    $myvars .= "img=www.URLTOIMAGE.png";
-    */
-    
-    $ch = curl_init($url);
-    curl_setopt( $ch, CURLOPT_POST, 1);
-    curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
-    curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt( $ch, CURLOPT_HEADER, 0);
-    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
-    $response = curl_exec($ch);
-```
-That's all! Simple right?
+# Vivus Hub
+Here at Vivus Hub we've done the heavy duty so you can focus on your business. You can send or schedule tweets for later using our API, to do this connect your twitter to [Vivus Hub](https://www.vivushub.com/vivus/interface/settings), request your API token and follow our endpoint tutorial.
 
 # Congrats
 Congratulations you've successfully implemented the twitter API to your code. If you are running into problems feel free to email
-dev@checkmateconcevoir.com or better yet you can make use of the checkmateconcevoir.com/vivus/ platform to send and schedule tweets.
+dev@vivushub.com or better yet you can make use of the vivushub.com/vivus/ platform to send and schedule tweets.
 
 # License
 The codes and all related text in this doucment are licensed under the BCD license.
-Copyright 2019 Checkmate Concevoir ltd.
+Copyright 2019 Vivus Hub ltd.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.

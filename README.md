@@ -3,12 +3,12 @@ Vivus Hub family of apps is designed to helps users create and share live experi
 
 - [Features](#features)
 - [Usage Guide](#usage-guide)
- + [Get Key](#get-key)
- + [Create Event](#create-event)
- + [Event List](#event-list)
- + [Get Insight](#get-insight)
- + [Handle Ticket](#handle-ticket)
- + [Handle Promoter](#handle-promoter)
+ - [**Get Key**](#get-key)
+ - [**Create Event**](#create-event)
+ - [**Event List**](#event-list)
+ - [**Get Insight**](#get-insight)
+ - [**Handle Ticket**](#handle-ticket)
+ - [**Handle Promoter**](#handle-promoter)
 - [Endpoint Reference](#endpoint-reference) 
 - [Credit](#credit)
 - [License](#license)
@@ -50,14 +50,37 @@ curl -i -X GET \
 ```
 
 ### Event List
+To get a list of your events current hosted on Vivus Create, you need the following parameters:
+* `id` - ID of the event if you are updating or deleting an event.
+* `username` - Your username.
+* `pgn` - Offset the return event list by this number.
+* `rType` -  Request type, this variable only accepts `delete`, `update`, `create`.
+* `key` - Your public API Key.
 ```php
 // Endpoint Request
 curl -i -X GET \
 "https://www.vivushub.com/vivus/interface/API/public/list"
 
 // Response 
+{
+    'status': 'success',
+    'result': [
+        {
+            'id': '',
+            'username': '',
+            'eventname': '',
+            'organiser': '',
+            'location': '',
+            'Country': '',
+            'iso': '',
+            'startdate': '',
+            'enddate': '',
+            'rType': ''
+        }
+    ]
+}
 ```
-
+For security reasons, ticket creation, updates and deletetion requires a different endpoints. 
 ### Get Insight
 ```php 
 // Endpoint Request
@@ -102,7 +125,7 @@ curl -i -X POST \
         {
             'id': '',
             'promoter': '',
-            'amount': ''
+            'amount': '',
             'timeRegistered': ''
         }
     ]
@@ -143,4 +166,4 @@ curl -i -X POST \
 Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
 
 ## License
-The codes and all related text in this documentation falls under [Vivus Hub Content and Commercially available contents licence agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GNU when applicable. In the event of a conflict between our terms and the GNU license, Vivus Hub terms takes precedent.
+The codes and all related text in this documentation falls under [Vivus Hub commercially available contents agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GNU when applicable. In the event of a conflict between our terms and the GNU license, Vivus Hub terms takes precedent.
