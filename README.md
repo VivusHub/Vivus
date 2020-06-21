@@ -40,7 +40,7 @@ When updating events, you are free to ignore variables you would like to miss ou
 ```php 
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/event"
+"https://www.api.vivushub.com/event"
 
 // Response 
 {
@@ -59,7 +59,7 @@ To get a list of your events current hosted on Vivus Create, you need the follow
 ```php
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/list"
+"https://www.api.vivushub.com/list"
 
 // Response 
 {
@@ -85,7 +85,7 @@ For security reasons, ticket creation, updates and deletetion requires a differe
 ```php 
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/insight"
+"https://www.api.vivushub.com/insight"
 
 // Response 
 ```
@@ -94,7 +94,7 @@ curl -i -X GET \
 ```php 
 // Endpoint Request
 curl -i -X POST \
-"https://www.vivushub.com/vivus/interface/API/public/ticket"
+"https://www.api.vivushub.com/ticket"
 
 // Response 
 ```
@@ -110,7 +110,7 @@ Promoters allow you to reach a larger audience, we understand and we've leverage
 ```php 
 // Endpoint Request
 curl -i -X POST \
-"https://www.vivushub.com/vivus/interface/API/public/partners"
+"https://www.api.vivushub.com/partners"
 
 // Create, Update, Delete
 {
@@ -136,31 +136,31 @@ Handle event:
 ```php 
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/event"
+"https://www.api.vivushub.com/event"
 ```
 Show hosted even:
 ```php
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/list"
+"https://www.api.vivushub.com/list"
 ```
 Handle insights:
 ```php 
 // Endpoint Request
 curl -i -X GET \
-"https://www.vivushub.com/vivus/interface/API/public/insight"
+"https://www.api.vivushub.com/insight"
 ```
 Handle tickets:
 ```php 
 // Endpoint Request
 curl -i -X POST \
-"https://www.vivushub.com/vivus/interface/API/public/ticket"
+"https://www.api.vivushub.com/ticket"
 ```
 Partners: 
 ```php 
 // Endpoint Request
 curl -i -X POST \
-"https://www.vivushub.com/vivus/interface/API/public/partners"
+"https://www.api.vivushub.com/partners"
 ```
 ## Credits
 Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
