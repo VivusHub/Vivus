@@ -1,5 +1,5 @@
 # Synopsis
-Vivus Hub family of apps is designed to help users create and share life experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help in any section please feel free to email us at support@vivushub.com.
+Vivus Hub family of apps is designed to help users create and share live experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help please email us at support@vivushub.com.
 
 - [Features](#features)
 - [Usage Guide](#usage-guide)
@@ -14,15 +14,14 @@ Vivus Hub family of apps is designed to help users create and share life experie
 - [License](#license)
 
 ## Usage Guide
+The Graph API is HTTP-based, so it works with any languages that has an HTTP library such as cURL and more. An additional benefit is that you can use the Graph API library directly in your browser. 
+
 ### Get Key
 This documentation assumes you already have an API access token or key. If you don't have one please log in to [Vivus](https://www.vivushub.com/vivus/interface/settings?ref=github). You'll find your token under settings.
 
-
 ### Create Event
-The Graph API is HTTP-based, so it works with any languages that has an HTTP library such as cURL and more. An additional benefit is that you can use the Graph API library directly in your browser. 
-
-To create an event you need the following parameters:
-* `eventname` - The name of your event.
+Vivus Hub gives you high flexiblity when creating and updating your event. To update create or modify your event using our API you need the following arguments:
+* `eventname` [String] - The name of your event.
 * `organiser` - The name of the organiser.
 * `img` - Url to the event image.
 * `tag` - Short promotion tag for your event.
@@ -163,7 +162,7 @@ curl -i -X POST \
 "https://www.api.vivushub.com/partners"
 ```
 ## Credits
-Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub) to get project updates or fork this repo.
+Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub).
 
 ## License
-The codes and all related text in this documentation fall under [Vivus Hub commercially available contents agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the GNU when applicable. In the event of a conflict between our terms and the GNU license, Vivus Hub terms take precedent.
+The codes and all related text in this documentation fall under [Vivus Hub commercially available contents agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the MIT License when applicable. In the event of a conflict between our terms and the MIT License, Vivus Hub terms take precedent.
