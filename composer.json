@@ -4,7 +4,7 @@
     "keywords": ["vivus hub", "vivus", "vivus create", "event management"],
     "homepage": "https://www.vivushub.com",
     "type": "library",
-    "license": "Vivus Hub commercial license and MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Seun Oboite",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VivusHub": "src/"
+            "VivusHub\\": "src/"
         }
     }
 }
