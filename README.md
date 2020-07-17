@@ -9,6 +9,7 @@ Vivus Hub family of apps is designed to help users create and share live experie
  - [Get Insight](#get-insight)
  - [Handle Ticket](#handle-ticket)
  - [Handle Promoter](#handle-promoter)
+ - [Installation](#installation)
 - [Endpoint Reference](#endpoint-reference) 
 - [Credit](#credit)
 - [License](#license)
@@ -22,16 +23,16 @@ This documentation assumes you already have an API access token or key. If you d
 ### Create Event
 Vivus Hub gives you high flexiblity when creating and updating your event. To update create or modify your event using our API you need the following arguments:
 * `eventname` [String] - The name of your event.
-* `organiser` - The name of the organiser.
-* `img` - Url to the event image.
-* `tag` - Short promotion tag for your event.
-* `desc` - Description of the event.
-* `startdate` - Start time of the event, usually in dd-mm-yy H:i:s format.
-* `enddate` - End time of the event, usually in dd-mm-yy H:i:s format.
-* `location` - Location of the event short but descriptive e.g 1600 Pennsylvania Avenue NW Washington, D.C.
-* `country` - The country where the event is hosted.
-* `rType` -  Request type, this variable only accepts `delete`, `update`, `create`.
-* `key` - Your public API key.
+* `organiser` [String] - The name of the organiser.
+* `img` [String] - Url to the event image.
+* `tag` [String] - Short promotion tag for your event.
+* `desc` [String] - Description of the event.
+* `startdate` [datetime] - Start time of the event, usually in dd-mm-yy H:i:s format.
+* `enddate` [datetime] - End time of the event, usually in dd-mm-yy H:i:s format.
+* `location` [String] - Location of the event short but descriptive e.g 1600 Pennsylvania Avenue NW Washington, D.C.
+* `country` [String] - The country where the event is hosted.
+* `rType` [String] -  Request type, this variable only accepts `delete`, `update`, `create`.
+* `key` [String] - Your public API key.
 
 When updating events, you are free to ignore variables you would like to miss out. Once a request is made, JSON data is returned back e.g 
 
@@ -50,11 +51,11 @@ curl -i -X GET \
 
 ### Event List
 To get a list of your events current hosted on Vivus Create, you need the following parameters:
-* `id` - ID of the event if you are updating or deleting an event.
-* `username` - Your username.
-* `pgn` - Offset the return event list by this number.
-* `rType` -  Request type, this variable only accepts `delete`, `update`, `create`.
-* `key` - Your public API Key.
+* `id` [String] - ID of the event if you are updating or deleting an event.
+* `username` [String] - Your username.
+* `pgn` [String] - Offset the return event list by this number.
+* `rType` [String] -  Request type, this variable only accepts `delete`, `update`, `create`.
+* `key` [String] - Your public API Key.
 ```php
 // Endpoint Request
 curl -i -X GET \
@@ -100,11 +101,11 @@ curl -i -X POST \
 
 ### Handle Promoter
 Promoters allow you to reach a larger audience, we understand and we've leveraged this on Vivus. To handle promoters you need the following parameters: 
-* `id` - Id of the promoter you would like to update.
-* `username` - Username of the promoter.
-* `eventid` - Id of the event, this can be found from your event list.
-* `amount` - Amount you would like to pay the promoter. Take note, payouts are based on the currency of the event being hosted e.g if the tickets are priced in pounds the promoter will be paid in pounds.
-* `rType` - Request type, this variable only accepts `delete`, `update`, `create`, `list`.
+* `id` [String] - Id of the promoter you would like to update.
+* `username` [String] - Username of the promoter.
+* `eventid` [String] - Id of the event, this can be found from your event list.
+* `amount` [String] - Amount you would like to pay the promoter. Take note, payouts are based on the currency of the event being hosted e.g if the tickets are priced in pounds the promoter will be paid in pounds.
+* `rType` [String] - Request type, this variable only accepts `delete`, `update`, `create`, `list`.
 
 ```php 
 // Endpoint Request
@@ -130,6 +131,27 @@ curl -i -X POST \
     ]
 }
 ```
+## Installation
+### PHP installation
+The Vivus Hub SDK uses composer to manage dependencies. Visit the <a href="https://getcomposer.org/download/" target="_blank">composer documentation</a> to learn how to install composer.
+
+Add the following to your `composer.json` file:
+
+```json
+{
+    "require": {
+        "vivus-hub/php-sdk": "1.0"
+    }
+}
+```
+then install it through composer:
+
+```shell
+php composer.phar install --no-dev
+```
+
+This SDK and its dependencies will be installed under `./vendor`.
+
 ## Endpoint Reference
 Handle event:
 ```php 
