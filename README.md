@@ -140,7 +140,7 @@ Add the following to your `composer.json` file:
 ```json
 {
     "require": {
-        "vivus-hub/php-sdk": "1.0"
+        "vivus-hub/php-sdk"
     }
 }
 ```
