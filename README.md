@@ -21,7 +21,7 @@ The Graph API is HTTP-based, so it works with any languages that has an HTTP lib
 This documentation assumes you already have an API access token or key. If you don't have one please log in to [Vivus](https://www.vivushub.com/vivus/interface/settings?ref=github). You'll find your token under settings.
 
 ### Create Event
-Vivus Hub gives you high flexiblity when creating and updating your event. To update create or modify your event using our API you need the following arguments:
+Vivus Hub gives you high flexiblity when creating and updating your event. To update, create or modify your event using our API you need the following arguments:
 * `eventname` [String] - The name of your event.
 * `organiser` [String] - The name of the organiser.
 * `img` [String] - Url to the event image.
@@ -34,7 +34,7 @@ Vivus Hub gives you high flexiblity when creating and updating your event. To up
 * `rType` [String] -  Request type, this variable only accepts `delete`, `update`, `create`.
 * `key` [String] - Your public API key.
 
-When updating events, you are free to ignore variables you would like to miss out. Once a request is made, JSON data is returned back e.g 
+When modifying events, you are free to ignore variables you wish to remain unchanged. Once a request is made, JSON data is returned back e.g: 
 
 
 ```php 
@@ -50,7 +50,7 @@ curl -i -X GET \
 ```
 
 ### Event List
-To get a list of your events current hosted on Vivus Create, you need the following parameters:
+To get a list of your events hosted on Vivus Create, you need the following arguments:
 * `id` [String] - ID of the event if you are updating or deleting an event.
 * `username` [String] - Your username.
 * `pgn` [String] - Offset the return event list by this number.
