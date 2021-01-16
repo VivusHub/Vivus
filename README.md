@@ -27,8 +27,8 @@ Vivus Hub gives you high flexiblity when creating and updating your event. To up
 * `img` [String] - Url to the event image.
 * `tag` [String] - Short promotion tag for your event.
 * `desc` [String] - Description of the event.
-* `startdate` [datetime] - Start time of the event, usually in dd-mm-yy H:i:s format.
-* `enddate` [datetime] - End time of the event, usually in dd-mm-yy H:i:s format.
+* `startdate` [datetime] - Start time of the event, usually in dd-mm-YYY H:m:s 24 hours format.
+* `enddate` [datetime] - End time of the event, usually in dd-mm-YYY H:s:s 24 hours format.
 * `location` [String] - Location of the event short but descriptive e.g 1600 Pennsylvania Avenue NW Washington, D.C.
 * `country` [String] - The country where the event is hosted.
 * `rType` [String] -  Request type, this variable only accepts `delete`, `update`, `create`.
