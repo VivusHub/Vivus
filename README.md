@@ -27,8 +27,8 @@ Vivus Hub gives you high flexiblity when creating and updating your event. To up
 * `img` [String] - Url to the event image.
 * `tag` [String] - Short promotion tag for your event.
 * `desc` [String] - Description of the event.
-* `startdate` [datetime] - Start time of the event, usually in dd-mm-YYY H:m:s 24 hours format.
-* `enddate` [datetime] - End time of the event, usually in dd-mm-YYY H:s:s 24 hours format.
+* `startdate` [datetime] - Start time of the event, usually in dd-mm-YYY HH:mm:ss 24 hours format.
+* `enddate` [datetime] - End time of the event, usually in dd-mm-YYY HH:mm:ss 24 hours format.
 * `location` [String] - Location of the event short but descriptive e.g 1600 Pennsylvania Avenue NW Washington, D.C.
 * `country` [String] - The country where the event is hosted.
 * `rType` [String] -  Request type, this variable only accepts `delete`, `update`, `create`.
@@ -187,4 +187,4 @@ curl -i -X POST \
 Vivus Hub API is owned and maintained by [Vivus Hub ltd](https://www.vivushub.com/vivus/?ref=github&adFor=events). You can follow us on Twitter at [VivusHub](https://www.twitter.com/vivushub).
 
 ## License
-The codes and all related text in this documentation fall under [Vivus Hub commercially available contents agreement](https://www.vivushub.com/vivus/interface/terms) and in some cases the MIT License when applicable. In the event of a conflict between our terms and the MIT License, Vivus Hub terms take precedent.
+The codes and all related text in this documentation fall under [Vivus Hub commercially available contents](https://www.vivushub.com/vivus/interface/terms).
