@@ -17,6 +17,25 @@ class TicketHubVH {
 	 * @return [type]        [description]
 	 */
 	public static function ticketEdit($key, $data, $rType) {
+
+		switch ($rType) {
+		case 'create':
+			# code...
+			break;
+
+		case 'update':
+			# code...
+			break;
+
+		case 'delete':
+			# code...
+			break;
+
+		default:
+			# code...
+			break;
+		}
+
 		$url = "https://www.api.vivushub.com/ticket";
 		$myvars = "";
 		$ch = curl_init($url);

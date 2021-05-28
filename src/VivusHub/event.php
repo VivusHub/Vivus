@@ -17,6 +17,25 @@ class EventHubVH {
 	 * @return [type]        [description]
 	 */
 	public static function eventEdit($key, $data, $rType) {
+
+		switch ($rType) {
+		case 'create':
+			# code...
+			break;
+
+		case 'update':
+			# code...
+			break;
+
+		case 'delete':
+			# code...
+			break;
+
+		default:
+			# code...
+			break;
+		}
+
 		$url = "https://www.api.vivushub.com/event";
 		$myvars = "message=$msg&access_token=$pageAccessToken";
 		$ch = curl_init($url);
