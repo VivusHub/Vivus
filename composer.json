@@ -9,7 +9,11 @@
         {
             "name": "Seun Oboite",
             "email": "dev@vivushub.com"
-        }
+        },
+        {
+            "name": "Vivus Hub LTD",
+            "email": "dev@vivushub.com"
+        },
     ],
     "minimum-stability": "dev",
     "require": {

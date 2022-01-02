@@ -2,11 +2,11 @@
 
 ## 1. Purpose
 
-A primary goal of Checkmate Vivus is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
+A primary goal of [Vivus Hub](https://www.vivushub.com/ref=github) is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
 
 This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 
-We invite all those who participate in Checkmate Vivus to help us create safe and positive experiences for everyone.
+We invite all those who participate in Vivus Hub development to help us create a safe and positive experiences for everyone.
 
 ## 2. Open Source Citizenship
 
@@ -63,7 +63,7 @@ Additionally, community organizers are available to help community members engag
 
 If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify vivushub with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
 
-[Policy](https://www.vivushub.com/terms/terms)
+[Policy](https://www.vivushub.com/vivus/interface/terms)
 
 ## 8. Scope
 

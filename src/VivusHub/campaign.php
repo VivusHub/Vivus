@@ -2,9 +2,9 @@
 
 /*
 
-Vivus Hub Commercially available content [https://vivushub.com/vivus/interface/terms]
+Vivus Hub commercially available content [https://vivushub.com/vivus/interface/terms]
 
-Copyright (c) 2021 Vivus Hub Ltd.
+© Copyright Vvivus Hub Ltd 2021.
 
  */
 

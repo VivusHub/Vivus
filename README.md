@@ -1,5 +1,5 @@
 # Synopsis
-Vivus Hub family of apps is designed to help users create and share live experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help please email us at support@vivushub.com.
+[Vivus Hub](https://www.vivushub.com/ref=github) family of apps is designed to help users create and share live experiences. This repo has been fully documented to the best of our knowledge to help both organisers and developers get the best experience from our platform. If you need further help please email us at support@vivushub.com.
 
 - [Features](#features)
 - [Usage Guide](#usage-guide)
