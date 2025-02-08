@@ -39,7 +39,7 @@ When modifying events, you are free to ignore variables you wish to remain uncha
 
 ```php 
 // Endpoint Request
-curl -i -X GET \
+curl -i -X POST \
 "https://www.api.vivushub.com/event"
 
 // Response 
